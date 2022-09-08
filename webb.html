@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Svce</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            font-family:sans-serif;
+        }
+        body{
+            border: 10px solid transparent;
+            width:100%;
+            height:100vh;
+            transition: .2 ease-in;
+            background-repeat:no-repeat;
+           background-attachment: fixed;
+           /* background-position: left;*/background-size:100% 670px;
+           border-image: url(border.png) 30 round;
+        }
+       
+        .navbar li{
+             display:inline;
+             padding:0px 15px;
+             font-weight:bold;
+             color:whitesmoke;
+            
+        }
+        .navbar li a{
+            text-decoration:none ;
+        }
+        .navbar li:hover{
+            color:cyan;
+            box-shadow:inset 0px 15px  #ccffff;
+            border-radius: 50%;
+            text-shadow: 2px 2px black ;
+        }
+        .navbar{
+            margin-left:300px;
+            padding-top:20px;
+            
+        }
+        header{
+            position: -webkit-sticky;
+             position: sticky;
+           top: 0;
+          display:flex;
+          width:100%;
+          height:50px;
+          background-color: 
+          #ffd633;
+        }
+         header img{
+            margin-left:200px;
+         }
+        
+         hr{
+           
+            width:100%;
+            height:5px;
+            background-color:#0059b3;
+            border:none;
+         }
+         div .middle{
+           
+            width:100%;
+            height:30px;
+            background-color:#0059b3;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+         }
+         marquee{
+            color:white;
+            font-weight:bold;
+         }
+         section{
+            width:100%;
+            height:100%;
+          
+        }
+        marquee pre{
+            display:inline;
+            margin-left:100px;
+        }
+       div .news{
+        background-color: #ffd633;
+        border:2px solid #ffd633;
+   width:100px;
+   height:100%;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   color:white;
+   font-weight: bold;
+   border:5px solid white;
+   transition: 0.1em;
+    }
+    
+   div .image{
+    width:100%;
+    height:100vh;
+    position:relative;
+    overflow:hidden;
+   }
+   div .slider{
+    width:100%;
+    height:100vh;
+    position: absolute;
+    top:0;
+   }
+   #slideImg{
+    width: 100%;
+    height: 85%;
+    transition: 100s;
+   }
+   div .recruiter_page{
+    width:100%;
+    height:100%;
+   }
+   div .recruiter_page h1{
+    font-weight: bold;
+    text-align: center;
+   }
+   div .logo{
+    padding-left:100px;
+   }
+   div .footer{
+    width:100%;
+    height:200px;
+    background-color:#0059b3;
+    color:white;
+    
+   }
+   footer div{
+    display: inline-block;
+    margin-left:20px;
+   }
+   div .footer h1{
+    font-weight: bold;
+    margin-left:100px;
+   }
+   div .footer h3{
+    font-weight: bold;
+    margin-left:100px;
+   }
+   
+    
+    </style>
+</head>
+<body >
+    <div class="upper">
+        <header>
+            <img src="svcelogo.png" alt="Error occur" width="250px" >
+           <nav class="navbar">
+             <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#admission">Admission</a></li>
+                <li><a href="#alummni">Alumni</a></li>
+                <li><a href="#placement">Placement</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#campus">Campus</a></li>
+             </ul>
+           </nav>
+        </header>
+      <hr>
+        <div class="middle">
+            <div class="news">NEWS</div>
+         <marquee behavior="" scrollamount="12px" direction="left" onmouseover="this.stop();" onmouseout="this.start();"><pre>1.Collect the Degree Certificate </pre>  <pre>2.Dr.MAC Inter School-School Cricket Tournament-Registration </pre>  <pre>3.2022 Passed out students-collect transerfer certificate & course completion certificate </pre> <pre>4.SVCE News clipping from trinity mirror(22 July 18) </pre> <pre>5.List of prize winner in Faculty reasearch day 2022</pre> <pre>6.ISTE best student awards</pre>  </marquee>
+        </div>
+        <hr>
+        <div class="image" >
+            <div class="slider" onload="slider()"> 
+            <img src="Alumni-banner.jpg" alt="404 found" id="slideImg" onload="slider()">
+        </div>
+        </div>
+        <div class="recruiter_page">
+            <h1>Top Recruiters</h1>
+            <div class="logo">
+                <img src="1.png" alt="error">
+                <img src="2.png" alt="error">
+            </div>
+        </div>
+        <div class="footer">
+            <footer>
+                <div >
+                   <h1>CONTACT :</h1>
+                   <br><pre>
+                    044-2447 0688,044-2447 0689
+                    
+                    Ms. S. Bhuvaneswari - 918680944071
+                    Dr. N.R. Sheela - 919840861987
+                    Dr. M. Anandan - 919443813896
+                    Mr. N. Sathish - 918072317440
+                    Dr. V. Sridharan - 919790567576</pre>
+                </div>
+                <div >
+                    <h1>Contact Us</h1>
+                    <h3>CAMPUS ADDRESS</h3>
+                    <br>
+                   <pre>                    Sri Venkateswara College of Engineering
+                    Post Bag No.1
+                    Pennalur Village
+                    Chennai - Bengaluru Highways
+                    Sriperumbudur (off Chennai) Tk. - 602 117
+                    Tamil Nadu, India</pre>
+                </div>
+                <div >
+                   <h1> Quick Links</h1><br>
+                   <pre>                    Library
+                    Anti - Ragging Committee
+                    Disability Resource Centre
+                    Prevention of Ragging
+                    Mandatory Disclosure
+                    Undertaking for AICTE
+                    </pre>
+                </div>
+            </footer>
+        </div>
+    </div>
+  
+   <!-- <script>
+        var slideImg=document.getElementById("slideImg");
+        var images=new Array("visit.png", "top.png", "pro.jpg","flag.png" ,"Web-Banner.jpg" );
+        var len=images.length;
+        var i=0;
+        function slider(){
+            if(i>len-1){
+                i=0;
+            }
+            slideImg.src=images[i];
+            i++;
+            setTimeout(slider,500000);
+        }
+    </script> -->
+</body>
+</html>
